@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>To Do App</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>TO DO LIST</h1>
+
+        <div class="content">
+
+            <!-- LEFT SIDE (FILTER ONLY) -->
+            <div class="sidebar">
+
+                <button onclick="filterTasks('all')">All (<span id="allCount">0</span>)</button>
+                <button onclick="filterTasks('pending')">Pending (<span id="pendingCount">0</span>)</button>
+                <button onclick="filterTasks('completed')">Completed (<span id="completedCount">0</span>)</button>
+
+            </div>
+
+            <!-- RIGHT SIDE -->
+            <div class="tasks-area">
+
+                <input type="text" id="search" placeholder="Search...">
+
+                <input type="text" id="taskInput" placeholder="Add task...">
+
+                <button onclick="addTask()">Add</button>
+
+                <div id="taskList"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script defer src="script.js">
+       
+    </script>
+
+</body>
+
+</html>

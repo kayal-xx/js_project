@@ -1,0 +1,128 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial;
+        }
+
+        body {
+            background: #f3f3f3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 900px;
+            background: #ddd;
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* LAYOUT */
+        .content {
+            display: flex;
+            gap: 20px;
+        }
+
+        /* SIDEBAR */
+        .sidebar {
+            width: 200px;
+        }
+
+        .sidebar input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            border: none;
+        }
+
+        .sidebar button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 8px;
+            background: #bbb;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .sidebar button:hover {
+            background: #999;
+        }
+
+        /* TASK AREA */
+        .tasks {
+            flex: 1;
+        }
+
+        .task {
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .tasks-area {
+            flex: 1;
+
+        }
+
+        .tasks-area input {
+            width: 100%;
+            margin-bottom: 10px;
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .tasks-area button {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: none;
+            border-radius: 8px;
+            background: #bbb;
+            cursor: pointer;
+        }
+
+        .completed {
+            text-decoration: line-through;
+            color: gray;
+        }
+
+        .task button {
+            margin-left: 5px;
+            border: none;
+            padding: 5px 8px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        /* MOBILE */
+        @media (max-width: 600px) {
+            .content {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+            }
+        }
