@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (e.key === "Enter") addTask();
     });
 
-    document.querySelector(".sidebar button").addEventListener("click", addTask);
+    document.getElementById("addBtn").addEventListener("click", addTask);
 
     renderTasks();
 });
@@ -26,8 +26,9 @@ function addTask() {
 
     let text = input.value.trim();
 
-    if (text === "") {
+    if (!text) {
         alert("Task empty 😒");
+        input.value = "";
         return;
     }
 
