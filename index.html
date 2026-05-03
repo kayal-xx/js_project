@@ -17,7 +17,7 @@
 
         <div class="content">
 
-            <!-- LEFT SIDE (FILTER ONLY) -->
+            <!-- LEFT SIDEBAR -->
             <div class="sidebar">
 
                 <button onclick="filterTasks('all')">All (<span id="allCount">0</span>)</button>
@@ -26,14 +26,17 @@
 
             </div>
 
-            <!-- RIGHT SIDE -->
+            <!-- Task Area -->
             <div class="tasks-area">
 
                 <input type="text" id="search" placeholder="Search...">
 
-                <input type="text" id="taskInput" placeholder="Add task...">
+                <div class="add-row">
 
-                <button onclick="addTask()" id="addBtn" type="button">Add</button>
+                    <input type="text" id="taskInput" placeholder="Add task...">
+
+                    <button id="addBtn" type="button">Add</button>
+                </div>
 
                 <div id="taskList"></div>
 
@@ -43,8 +46,8 @@
 
     </div>
 
-    <script defer src="script.js">
-       
+    <script src="script.js">
+
     </script>
 
 </body>

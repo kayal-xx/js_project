@@ -20,15 +20,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
 /* ADD FUNCTION */
 function addTask() {
-    let input = document.getElementById("taskInput");
-
-    if (!input) return; // safety
-
-    let text = input.value.trim();
+    const input = document.getElementById("taskInput");
+    const text = input.value.trim();
 
     if (!text) {
         alert("Task empty 😒");
-        input.value = "";
         return;
     }
 
