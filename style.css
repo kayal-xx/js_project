@@ -1,8 +1,7 @@
        
        :root {
-    --bg: #f0f4f9;
     --surface: #ffffff;
-    --surface-2: #e8eef7;
+    --surface-2: #f3e2e2;
     --blue-deep: #0d2d6e;
     --blue-mid: #1a4ba8;
     --blue-accent: #2563eb;
@@ -29,7 +28,7 @@
 
         body {
             font-family: 'DM Sans', sans-serif;
-            background: var(--bg);
+            background:linear-gradient(to bottom, #0b1f4b, #ffffff);
             min-height: 100vh;
             display: flex;
             justify-content: center;
